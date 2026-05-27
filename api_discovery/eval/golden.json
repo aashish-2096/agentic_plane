@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "query": "get all books",
+    "expected_capability_id": "default:fakerestapi:GET_api_v1_Books",
+    "expected_domain": "books",
+    "notes": "basic list query"
+  },
+  {
+    "id": 2,
+    "query": "fetch a book by its id",
+    "expected_capability_id": "default:fakerestapi:GET_api_v1_Books_{id}",
+    "expected_domain": "books",
+    "notes": "id-scoped GET"
+  },
+  {
+    "id": 3,
+    "query": "retrieve publication details",
+    "expected_capability_id": "default:fakerestapi:GET_api_v1_Books_{id}",
+    "expected_domain": "books",
+    "notes": "semantic synonym — publication = book"
+  },
+  {
+    "id": 4,
+    "query": "create a new book",
+    "expected_capability_id": "default:fakerestapi:POST_api_v1_Books",
+    "expected_domain": "books",
+    "notes": "create intent"
+  },
+  {
+    "id": 5,
+    "query": "update book information",
+    "expected_capability_id": "default:fakerestapi:PUT_api_v1_Books_{id}",
+    "expected_domain": "books",
+    "notes": "update intent"
+  },
+  {
+    "id": 6,
+    "query": "delete a book",
+    "expected_capability_id": "default:fakerestapi:DELETE_api_v1_Books_{id}",
+    "expected_domain": "books",
+    "notes": "delete intent"
+  },
+  {
+    "id": 7,
+    "query": "list all authors",
+    "expected_capability_id": "default:fakerestapi:GET_api_v1_Authors",
+    "expected_domain": "authors",
+    "notes": "basic list query"
+  },
+  {
+    "id": 8,
+    "query": "get author details by id",
+    "expected_capability_id": "default:fakerestapi:GET_api_v1_Authors_{id}",
+    "expected_domain": "authors",
+    "notes": "id-scoped GET"
+  },
+  {
+    "id": 9,
+    "query": "fetch books written by an author",
+    "expected_capability_id": "default:fakerestapi:GET_api_v1_Authors_authors_books_{idBook}",
+    "expected_domain": "authors",
+    "notes": "cross-entity — books by author"
+  },
+  {
+    "id": 10,
+    "query": "add a new author",
+    "expected_capability_id": "default:fakerestapi:POST_api_v1_Authors",
+    "expected_domain": "authors",
+    "notes": "create intent"
+  },
+  {
+    "id": 11,
+    "query": "remove an author",
+    "expected_capability_id": "default:fakerestapi:DELETE_api_v1_Authors_{id}",
+    "expected_domain": "authors",
+    "notes": "delete intent"
+  },
+  {
+    "id": 12,
+    "query": "get all activities",
+    "expected_capability_id": "default:fakerestapi:GET_api_v1_Activities",
+    "expected_domain": "activities",
+    "notes": "basic list query"
+  },
+  {
+    "id": 13,
+    "query": "fetch activity by id",
+    "expected_capability_id": "default:fakerestapi:GET_api_v1_Activities_{id}",
+    "expected_domain": "activities",
+    "notes": "id-scoped GET"
+  },
+  {
+    "id": 14,
+    "query": "get all users",
+    "expected_capability_id": "default:fakerestapi:GET_api_v1_Users",
+    "expected_domain": "users",
+    "notes": "basic list query"
+  },
+  {
+    "id": 15,
+    "query": "fetch user profile by id",
+    "expected_capability_id": "default:fakerestapi:GET_api_v1_Users_{id}",
+    "expected_domain": "users",
+    "notes": "id-scoped GET"
+  },
+  {
+    "id": 16,
+    "query": "update user details",
+    "expected_capability_id": "default:fakerestapi:PUT_api_v1_Users_{id}",
+    "expected_domain": "users",
+    "notes": "update intent"
+  },
+  {
+    "id": 17,
+    "query": "delete a user account",
+    "expected_capability_id": "default:fakerestapi:DELETE_api_v1_Users_{id}",
+    "expected_domain": "users",
+    "notes": "delete intent"
+  },
+  {
+    "id": 18,
+    "query": "get all cover photos",
+    "expected_capability_id": "default:fakerestapi:GET_api_v1_CoverPhotos",
+    "expected_domain": "coverphotos",
+    "notes": "basic list query"
+  },
+  {
+    "id": 19,
+    "query": "fetch cover photo by id",
+    "expected_capability_id": "default:fakerestapi:GET_api_v1_CoverPhotos_{id}",
+    "expected_domain": "coverphotos",
+    "notes": "id-scoped GET"
+  },
+  {
+    "id": 20,
+    "query": "get book cover image",
+    "expected_capability_id": "default:fakerestapi:GET_api_v1_CoverPhotos_books_covers_{idBook}",
+    "expected_domain": "coverphotos",
+    "notes": "cross-entity — cover photo for a book"
+  }
+]
